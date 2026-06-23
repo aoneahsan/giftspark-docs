@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- GiftSpark Docs — Open Graph / social card (1200x630) -->
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1e1b4b"/>
+      <stop offset="0.55" stop-color="#312e81"/>
+      <stop offset="1" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Gift icon -->
+  <g transform="translate(120,205)">
+    <rect x="10" y="80" width="170" height="120" rx="12" fill="url(#box)"/>
+    <rect x="2" y="56" width="186" height="36" rx="10" fill="#818cf8"/>
+    <rect x="80" y="56" width="28" height="144" fill="#ec4899"/>
+    <rect x="2" y="70" width="186" height="20" fill="#ec4899"/>
+    <circle cx="94" cy="50" r="18" fill="#f472b6"/>
+    <ellipse cx="64" cy="40" rx="24" ry="18" fill="#ec4899"/>
+    <ellipse cx="124" cy="40" rx="24" ry="18" fill="#ec4899"/>
+    <path d="M182 0 L189 18 L207 25 L189 32 L182 50 L175 32 L157 25 L175 18 Z" fill="#c7f464"/>
+  </g>
+
+  <!-- Text -->
+  <text x="370" y="300" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-size="92" font-weight="800" fill="#ffffff">GiftSpark</text>
+  <text x="372" y="356" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-size="34" font-weight="500" fill="#c7d2fe">Documentation</text>
+  <text x="372" y="412" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-size="27" font-weight="400" fill="#a5b4fc">Recognition · Rewards · Surveys · Team Gifting</text>
+
+  <rect x="120" y="470" width="960" height="2" fill="#4338ca" opacity="0.6"/>
+  <text x="120" y="525" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-size="26" font-weight="600" fill="#e0e7ff">giftspark-docs.aoneahsan.com</text>
+  <text x="1080" y="525" text-anchor="end" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-size="24" font-weight="400" fill="#a5b4fc">by Ahsan Mahmood</text>
+</svg>

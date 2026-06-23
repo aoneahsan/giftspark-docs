@@ -1,0 +1,48 @@
+{
+  "$schema": "giftspark-docs-content-tracker",
+  "description": "Per-page content tracker for the GiftSpark documentation site. Resumable across sessions; the next unenriched/missing page is the next thing to write.",
+  "project": "giftspark-docs",
+  "repo": "github.com/aoneahsan/giftspark-docs (PUBLIC, remote 'o')",
+  "liveTarget": "https://giftspark-docs.aoneahsan.com",
+  "appSource": "giftspark (private) — features documented from real app code",
+  "createdAt": "2026-06-23",
+  "lastUpdated": "2026-06-23",
+  "wordsPerPageTarget": "600-1000 unique words, SEO uniqueness floor",
+  "seoFloor": "definition-first intro, distinct title+meta description, sections, FAQ where useful, last_update + author, AI-bot robots allowlist, llms.txt, JSON-LD (WebSite/Organization/SoftwareApplication)",
+  "totalPages": 24,
+  "completePages": 24,
+  "pages": [
+    { "id": "intro", "path": "docs/intro.md", "status": "complete" },
+    { "id": "getting-started/overview", "path": "docs/getting-started/overview.md", "status": "complete" },
+    { "id": "getting-started/account-setup", "path": "docs/getting-started/account-setup.md", "status": "complete" },
+    { "id": "getting-started/quick-start", "path": "docs/getting-started/quick-start.md", "status": "complete" },
+    { "id": "features/recognition-and-feed", "path": "docs/features/recognition-and-feed.md", "status": "complete" },
+    { "id": "features/gamification", "path": "docs/features/gamification.md", "status": "complete" },
+    { "id": "features/regalos-and-rewards", "path": "docs/features/regalos-and-rewards.md", "status": "complete" },
+    { "id": "features/gifting-toolkit", "path": "docs/features/gifting-toolkit.md", "status": "complete" },
+    { "id": "features/events-and-calendar", "path": "docs/features/events-and-calendar.md", "status": "complete" },
+    { "id": "features/surveys-and-insights", "path": "docs/features/surveys-and-insights.md", "status": "complete" },
+    { "id": "features/budgets-and-finance", "path": "docs/features/budgets-and-finance.md", "status": "complete" },
+    { "id": "features/wellness-and-growth", "path": "docs/features/wellness-and-growth.md", "status": "complete" },
+    { "id": "features/shopping-and-discovery", "path": "docs/features/shopping-and-discovery.md", "status": "complete" },
+    { "id": "features/ai-features", "path": "docs/features/ai-features.md", "status": "complete" },
+    { "id": "organization/setup-and-roles", "path": "docs/organization/setup-and-roles.md", "status": "complete" },
+    { "id": "organization/members-and-teams", "path": "docs/organization/members-and-teams.md", "status": "complete" },
+    { "id": "apps/mobile-app", "path": "docs/apps/mobile-app.md", "status": "complete" },
+    { "id": "apps/browser-extension", "path": "docs/apps/browser-extension.md", "status": "complete" },
+    { "id": "integrations", "path": "docs/integrations.md", "status": "complete" },
+    { "id": "faq", "path": "docs/faq.md", "status": "complete" },
+    { "id": "legal/privacy", "path": "docs/legal/privacy.md", "status": "complete" },
+    { "id": "legal/terms", "path": "docs/legal/terms.md", "status": "complete" },
+    { "id": "changelog", "path": "docs/changelog.md", "status": "complete" },
+    { "id": "about-the-author", "path": "docs/about-the-author.md", "status": "complete" }
+  ],
+  "futureBacklog": [
+    "Per-feature deep-dive sub-pages as modules grow (e.g. separate pages for badges, leaderboards, streaks)",
+    "Admin how-to guides (catalog management, budget setup, approvals)",
+    "Slack/Teams integration step-by-step setup guides"
+  ],
+  "runHistory": [
+    { "date": "2026-06-23", "summary": "Created the docs site from native-update-docs template; wrote complete 24-page baseline from real giftspark app features; brand + SEO + JSON-LD + llms.txt + robots AI-allowlist; dual hosting (Firebase + GitHub Pages).", "commit": "pending" }
+  ]
+}

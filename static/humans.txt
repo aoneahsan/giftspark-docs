@@ -1,0 +1,22 @@
+/* TEAM */
+
+Maintainer + Author: Ahsan Mahmood
+Site: https://aoneahsan.com
+Email: aoneahsan@gmail.com
+LinkedIn: https://linkedin.com/in/aoneahsan
+GitHub: https://github.com/aoneahsan
+Location: Pakistan
+
+/* PRODUCT */
+
+GiftSpark — employee engagement, recognition, and gifting platform.
+App: https://giftspark.aoneahsan.com
+Google Play: https://play.google.com/store/apps/details?id=com.aoneahsan.giftspark
+
+/* SITE */
+
+Last update: 2026-06-23
+Standards: HTML5, CSS3, Markdown, JSON-LD
+Components: Docusaurus 3, React 19, TypeScript
+Hosting: Firebase Hosting + GitHub Pages
+Source: https://github.com/aoneahsan/giftspark-docs

@@ -1,0 +1,91 @@
+/**
+ * GiftSpark — brand palette
+ * Primary: indigo #6366F1 (logo gift box)
+ * Secondary: violet #8B5CF6 (ribbon) · Accent: pink #EC4899 (bow)
+ * Spark: lime #C7F464
+ */
+
+:root {
+  --ifm-color-primary: #6366f1;
+  --ifm-color-primary-dark: #4f46e5;
+  --ifm-color-primary-darker: #4338ca;
+  --ifm-color-primary-darkest: #3730a3;
+  --ifm-color-primary-light: #818cf8;
+  --ifm-color-primary-lighter: #a5b4fc;
+  --ifm-color-primary-lightest: #c7d2fe;
+
+  --ifm-color-secondary: #ec4899;
+  --ifm-color-success: #10b981;
+  --ifm-color-info: #8b5cf6;
+  --ifm-color-warning: #f59e0b;
+  --ifm-color-danger: #ef4444;
+
+  --ifm-code-font-size: 92%;
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', sans-serif;
+  --ifm-heading-font-weight: 700;
+
+  --docusaurus-highlighted-code-line-bg: rgba(99, 102, 241, 0.1);
+
+  /* Soft accent surfaces used by callouts + author card */
+  --gs-surface-accent: rgba(236, 72, 153, 0.06);
+  --gs-surface-brand: rgba(99, 102, 241, 0.06);
+}
+
+/* Dark mode — keep brand recognisable, raise contrast */
+[data-theme='dark'] {
+  --ifm-color-primary: #a5b4fc;
+  --ifm-color-primary-dark: #818cf8;
+  --ifm-color-primary-darker: #6366f1;
+  --ifm-color-primary-darkest: #4f46e5;
+  --ifm-color-primary-light: #c7d2fe;
+  --ifm-color-primary-lighter: #ddd6fe;
+  --ifm-color-primary-lightest: #ede9fe;
+
+  --ifm-background-color: #0c0a1d;
+  --ifm-background-surface-color: #15122b;
+
+  --docusaurus-highlighted-code-line-bg: rgba(165, 180, 252, 0.18);
+}
+
+/* ---------------------------------------------------------------------------
+ * Subtle entrance animation on body headings (CSS-only, respects reduced motion)
+ * ------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: no-preference) {
+  .markdown > h1,
+  .markdown > h2 {
+    animation: gs-fade-up 420ms ease-out both;
+  }
+  @keyframes gs-fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Code block polish */
+.theme-code-block {
+  border-radius: 10px;
+}
+
+/* Author callout used on the about-the-author page */
+.gs-author-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: 12px;
+  background: var(--gs-surface-brand);
+  margin: 1.5rem 0;
+}
+
+.gs-author-card a {
+  font-weight: 600;
+}

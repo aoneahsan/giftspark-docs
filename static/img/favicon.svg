@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  GiftSpark Icon - Square Icon Only Version
+  Standalone icon without text for small sizes
+  Use for: Favicons, app icons, social media profile pictures
+
+  Created: 2026-02-20
+  Project: GiftSpark - Employee Engagement Platform
+  Export sizes: 16x16, 32x32, 48x48, 64x64, 128x128, 256x256, 512x512, 1024x1024
+-->
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366F1"/>
+      <stop offset="50%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#EC4899"/>
+    </linearGradient>
+
+    <!-- Gift Box Gradient -->
+    <linearGradient id="giftGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#F0F0F5"/>
+    </linearGradient>
+
+    <!-- Ribbon Gradient -->
+    <linearGradient id="ribbonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B"/>
+      <stop offset="100%" style="stop-color:#FF8E8E"/>
+    </linearGradient>
+
+    <!-- Spark Gradient -->
+    <linearGradient id="sparkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C7F464"/>
+      <stop offset="100%" style="stop-color:#4ECDC4"/>
+    </linearGradient>
+
+    <!-- Glow Effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Circle (instead of rounded square for better small-size rendering) -->
+  <circle cx="256" cy="256" r="256" fill="url(#bgGradient)"/>
+
+  <!-- Decorative Background Circles -->
+  <circle cx="100" cy="100" r="80" fill="#FFFFFF" opacity="0.1"/>
+  <circle cx="420" cy="400" r="100" fill="#FFFFFF" opacity="0.08"/>
+  <circle cx="450" cy="80" r="40" fill="#FFFFFF" opacity="0.1"/>
+
+  <!-- Gift Box Base -->
+  <rect x="96" y="224" width="320" height="224" rx="24" fill="url(#giftGradient)"/>
+
+  <!-- Gift Box Lid -->
+  <rect x="80" y="176" width="352" height="64" rx="16" fill="url(#giftGradient)"/>
+
+  <!-- Vertical Ribbon -->
+  <rect x="232" y="176" width="48" height="272" fill="url(#ribbonGradient)"/>
+
+  <!-- Horizontal Ribbon -->
+  <rect x="80" y="192" width="352" height="32" fill="url(#ribbonGradient)"/>
+
+  <!-- Ribbon Knot Center -->
+  <circle cx="256" cy="168" r="36" fill="url(#ribbonGradient)"/>
+  <circle cx="256" cy="168" r="18" fill="#FFFFFF" opacity="0.4"/>
+
+  <!-- Ribbon Bow Left -->
+  <ellipse cx="184" cy="136" rx="56" ry="44" fill="url(#ribbonGradient)"/>
+  <ellipse cx="184" cy="136" rx="28" ry="22" fill="#FFFFFF" opacity="0.3"/>
+
+  <!-- Ribbon Bow Right -->
+  <ellipse cx="328" cy="136" rx="56" ry="44" fill="url(#ribbonGradient)"/>
+  <ellipse cx="328" cy="136" rx="28" ry="22" fill="#FFFFFF" opacity="0.3"/>
+
+  <!-- Sparks with Glow -->
+  <g filter="url(#glow)">
+    <!-- Large Spark Top Right -->
+    <path d="M420 56 L434 94 L472 108 L434 122 L420 160 L406 122 L368 108 L406 94 Z" fill="url(#sparkGradient)"/>
+
+    <!-- Medium Spark Top Left -->
+    <path d="M88 64 L98 88 L122 98 L98 108 L88 132 L78 108 L54 98 L78 88 Z" fill="#FFFFFF"/>
+
+    <!-- Small Spark Bottom Right -->
+    <path d="M428 324 L434 342 L452 348 L434 354 L428 372 L422 354 L404 348 L422 342 Z" fill="#C7F464"/>
+  </g>
+
+  <!-- Small Sparkles -->
+  <circle cx="456" cy="192" r="6" fill="#FFFFFF"/>
+  <circle cx="52" cy="420" r="8" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="460" cy="340" r="5" fill="#C7F464"/>
+  <circle cx="380" cy="460" r="4" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="140" cy="460" r="6" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="68" cy="340" r="5" fill="#8B5CF6" opacity="0.6"/>
+</svg>

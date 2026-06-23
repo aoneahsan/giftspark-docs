@@ -1,0 +1,59 @@
+# ──────────────────────────────────────────────────────────────────────────
+# GitHub Pages deploy — builds the Docusaurus site and publishes it to Pages.
+#
+# Dual-hosting: this is the GitHub Pages half. The Firebase Hosting half is
+# deployed manually (see DEPLOY.md / `yarn firebase:deploy`). Both serve the
+# same custom domain (static/CNAME → giftspark-docs.aoneahsan.com); point the
+# DNS at whichever host you make primary.
+#
+# Enable: repo Settings → Pages → Source = "GitHub Actions".
+# ──────────────────────────────────────────────────────────────────────────
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment; cancel in-progress runs on new pushes.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build (Docusaurus)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Enable Corepack (Yarn)
+        run: corepack enable
+      - name: Install dependencies
+        run: yarn install --immutable
+      - name: Build
+        run: yarn build
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+
+  deploy:
+    name: Deploy to Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

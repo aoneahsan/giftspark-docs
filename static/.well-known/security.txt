@@ -1,0 +1,19 @@
+# GiftSpark — Security Contact (RFC 9116)
+# https://giftspark-docs.aoneahsan.com/.well-known/security.txt
+
+Contact: mailto:aoneahsan@gmail.com
+Contact: https://aoneahsan.com
+Expires: 2027-06-23T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://giftspark-docs.aoneahsan.com/.well-known/security.txt
+
+# Responsible disclosure policy
+#
+# Please report any security issue affecting GiftSpark (app, mobile app,
+# browser extension, or this docs site) via email to aoneahsan@gmail.com.
+# Include: a description of the issue and affected component, steps to
+# reproduce, your impact assessment, and your contact details.
+#
+# Initial response target: within 72 hours.
+# Out of scope: denial-of-service, social engineering, physical-access
+# attacks, and findings that depend on a rooted/jailbroken device.

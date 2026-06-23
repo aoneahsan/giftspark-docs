@@ -1,0 +1,51 @@
+# GiftSpark — Documentation Index
+
+> GiftSpark is an employee engagement platform for peer recognition, rewards (the Regalos module), pulse surveys, gamification, and team gifting. It runs as a React web app, native Android and iOS apps (Capacitor), and a companion browser extension. Free to use, backed by Firebase. App: https://giftspark.aoneahsan.com · Author: Ahsan Mahmood (https://aoneahsan.com).
+
+## About
+
+GiftSpark helps organizations recognize, reward, and engage their teams. The core loop is peer recognition: teammates post kudos and thank-yous to a shared feed, earn points and badges, and climb leaderboards. Recognition connects to a rewards catalog (Regalos) where points are redeemed for items via an approval and order workflow. Around that core, GiftSpark adds pulse surveys and sentiment insights, event tracking (birthdays, anniversaries, work milestones), budgets, and a full team-gifting toolkit (group gifts, registries, wish lists, Secret Santa). This `llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec.
+
+## Getting Started
+
+- [Introduction](https://giftspark-docs.aoneahsan.com/intro): what GiftSpark is, who it is for, and the feature areas it covers.
+- [Overview](https://giftspark-docs.aoneahsan.com/getting-started/overview): how the platform fits together — orgs, members, recognition, rewards.
+- [Account setup](https://giftspark-docs.aoneahsan.com/getting-started/account-setup): sign in with Google, join or create an organization, set your profile.
+- [Quick start](https://giftspark-docs.aoneahsan.com/getting-started/quick-start): send your first recognition and redeem your first reward in minutes.
+
+## Features
+
+- [Recognition & feed](https://giftspark-docs.aoneahsan.com/features/recognition-and-feed): kudos, thank-yous, the social feed, reactions, and values tagging.
+- [Gamification](https://giftspark-docs.aoneahsan.com/features/gamification): points, badges, streaks, leaderboards, challenges, and goals.
+- [Regalos & rewards](https://giftspark-docs.aoneahsan.com/features/regalos-and-rewards): the rewards catalog, categories, approvals, redemption codes, cart, and orders.
+- [Gifting toolkit](https://giftspark-docs.aoneahsan.com/features/gifting-toolkit): group gifts, gift circles, registries, wish lists, Secret Santa, wrapping and DIY ideas.
+- [Events & calendar](https://giftspark-docs.aoneahsan.com/features/events-and-calendar): birthdays, anniversaries, holidays, life events, and the team calendar.
+- [Surveys & insights](https://giftspark-docs.aoneahsan.com/features/surveys-and-insights): pulse surveys, sentiment, manager dashboard, team health score, and digest.
+- [Budgets & finance](https://giftspark-docs.aoneahsan.com/features/budgets-and-finance): recognition budgets, budget planner, and the personal money helpers.
+- [Wellness & growth](https://giftspark-docs.aoneahsan.com/features/wellness-and-growth): wellness, mental health resources, mentorship, learning, and coffee roulette.
+- [Shopping & discovery](https://giftspark-docs.aoneahsan.com/features/shopping-and-discovery): product comparison, store locator, shopping lists, size guides, and recommendations.
+- [AI features](https://giftspark-docs.aoneahsan.com/features/ai-features): the AI gift finder, chat assistant, interest graph, and recommendations.
+
+## Organization
+
+- [Setup & roles](https://giftspark-docs.aoneahsan.com/organization/setup-and-roles): create an organization, configure roles, and manage permissions.
+- [Members & teams](https://giftspark-docs.aoneahsan.com/organization/members-and-teams): invite members, build teams and subgroups, and use the directory.
+
+## Apps & Integrations
+
+- [Mobile app](https://giftspark-docs.aoneahsan.com/apps/mobile-app): the Capacitor Android/iOS app — install, sign-in, push, and biometrics.
+- [Browser extension](https://giftspark-docs.aoneahsan.com/apps/browser-extension): the companion extension for saving gift ideas and tracking events.
+- [Integrations](https://giftspark-docs.aoneahsan.com/integrations): Slack, Microsoft Teams, Google Maps, OneSignal push, and analytics.
+
+## Reference
+
+- [FAQ](https://giftspark-docs.aoneahsan.com/faq): common questions on cost, data, sign-in, and platforms.
+- [Privacy](https://giftspark-docs.aoneahsan.com/legal/privacy): what data GiftSpark collects, how it is used, and how to delete it.
+- [Terms summary](https://giftspark-docs.aoneahsan.com/legal/terms): plain-language summary of acceptable use.
+- [Changelog](https://giftspark-docs.aoneahsan.com/changelog): notable releases, latest first.
+
+## About the project
+
+- [About the author](https://giftspark-docs.aoneahsan.com/about-the-author): Ahsan Mahmood's developer profile, links, and contact.
+- App: https://giftspark.aoneahsan.com
+- Google Play: https://play.google.com/store/apps/details?id=com.aoneahsan.giftspark

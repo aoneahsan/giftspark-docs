@@ -1,0 +1,39 @@
+# GiftSpark Docs — AGENTS.md
+
+> AI agent instructions for the GiftSpark documentation site.
+
+This mirrors `CLAUDE.md` — keep both in sync.
+
+**Last Updated:** 2026-06-23
+
+## Project
+
+- Public documentation site for **GiftSpark** (employee engagement + gifting platform).
+- Stack: Docusaurus 3 + React 19 + TypeScript. **PUBLIC repo — no secrets.**
+- Live: https://giftspark-docs.aoneahsan.com · App: https://giftspark.aoneahsan.com.
+- App repo (private): `github.com/aoneahsan/employee-engagement-platform-gifts-for-workers`.
+
+## Rules (same as CLAUDE.md)
+
+- PUBLIC repo — NEVER commit `.env`, keys, service accounts, or tokens.
+- Brand banned words (`perk(s)`, `benefit(s)`, `perkforce`) are forbidden in all
+  content/code/comments. Use `reward(s)`, `regalo(s)`, `recognition`. Verify ZERO
+  before commit: `grep -rIn -iE "perk|benefit" docs src static *.ts *.md`.
+- Document only real, shipped features; honest framing (state what each does NOT do).
+- SEO floor per page: definition-first intro, distinct title/description, FAQ where
+  useful, `last_update`. robots allows AI bots; `llms.txt` + JSON-LD present.
+- Never run dev/preview servers — verify with one-shot `yarn build`.
+- yarn only; Node ≥18. One commit per task, pushed to remote `o`.
+
+## Verify
+
+```bash
+yarn install && yarn build   # must exit 0
+```
+
+## Content map
+
+`docs/`: `intro`, `getting-started/*`, `features/*` (10 feature areas),
+`organization/*`, `apps/*`, `integrations`, `faq`, `legal/*`, `changelog`,
+`about-the-author`. Sidebar in `sidebars.ts`; config + SEO in
+`docusaurus.config.ts`. Content tracker: `docs/tracking/giftspark-docs-content-tracker.json`.
