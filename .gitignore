@@ -27,12 +27,20 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Env / secrets
+# Env / secrets (PUBLIC repo — never track secrets)
 .env
+.env.*
+!.env.example
 .env.local
 .env.*.local
 *.pem
 *.key
+*.jks
+*.keystore
+key.properties
+keystore.properties
+*service-account*.json
+.npmrc
 .firebase/
 .firebaserc.local
 
