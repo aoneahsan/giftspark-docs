@@ -50,3 +50,14 @@ yarn build      # must exit 0
 `.gitignore` stays current with the project structure — ignore only recoverable artifacts (build/`dist`/`www`/`node_modules`/logs/caches/IDE), never lose source. Custom rules always present: `*.ignore.*`, `project-record-ignore/`. This is a **PUBLIC** repo -> secrets/`.env`/keystores are NEVER tracked.
 Full rule + private/public protocol: `~/.claude/rules/project-config.md`.
 Gitignore Last Verified: 2026-06-24
+
+## Firebase CLI + FilesHub Management — automate (IRON-SOLID · 2026-07-18)
+<!-- fb-cli+fileshub-mgmt-rule -->
+Anything **Firebase** (Auth config/providers, Firestore rules/indexes, Hosting, project settings, deploys) →
+done AUTOMATICALLY by the agent via the Firebase CLI (`npx -y firebase-tools@latest … --project <id>`, machine
+already logged in as aoneahsan@gmail.com) — never handed to the owner as a console step unless genuinely
+console-only. How-to: `~/.claude/rules/firebase-cli-automation.md`.
+Anything **FilesHub** project/key/origin admin (create project, mint/reveal/rotate keys, add restricted origins,
+scopes) → self-served via the Management API. KB: `~/.claude/rules/fileshub-management-api.md`; PAT ONLY in
+`~/.claude/.secrets/fileshub-management-api.md` (never commit/echo). Frontend keys `restricted` + exact origins;
+server keys `restricted` + `allow_no_origin`.
