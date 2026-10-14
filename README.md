@@ -1,45 +1,18 @@
 # GiftSpark Docs
 
-Public documentation site for **GiftSpark** — the employee engagement, recognition, and gifting platform.
+This public Docusaurus repository documents the private GiftSpark app. The current site is [giftspark-docs.aoneahsan.com](https://giftspark-docs.aoneahsan.com/); the app is at [giftspark.aoneahsan.com](https://giftspark.aoneahsan.com/). Check current app code before publishing a feature, privacy or API claim.
 
-- **App:** https://giftspark.aoneahsan.com
-- **Google Play:** https://play.google.com/store/apps/details?id=com.aoneahsan.giftspark
-- **Docs (this site):** https://giftspark-docs.aoneahsan.com
+The site is hosted by GitHub Pages. A push to `main` runs [deploy-pages.yml](.github/workflows/deploy-pages.yml), which builds and publishes the site. The previous Firebase Hosting configuration has been removed from this repository.
 
-Built with [Docusaurus](https://docusaurus.io/). Deployed to Firebase Hosting and GitHub Pages (dual hosting; point DNS at whichever you make primary).
+## Work locally
 
-## Local development
+Use Yarn 4 and Node 18 or newer:
 
 ```bash
-yarn install
-yarn start        # dev server on http://localhost:5962
+yarn install --immutable
+yarn typecheck
+yarn build
+yarn serve
 ```
 
-## Build
-
-```bash
-yarn build        # static output in build/
-yarn serve        # preview the production build on http://localhost:5963
-```
-
-## Deploy
-
-- **Firebase Hosting:** `yarn firebase:deploy` (project `giftspark-docs`).
-- **GitHub Pages:** pushing to `main` triggers `.github/workflows/deploy-pages.yml` (enable Settings → Pages → Source = GitHub Actions).
-
-See [DEPLOY.md](./DEPLOY.md) for details.
-
-## Structure
-
-```
-docs/                 Markdown content (intro, getting-started, features, …)
-src/css/custom.css    GiftSpark brand theme
-src/pages/index.tsx   Landing page
-static/               robots.txt, llms.txt, CNAME, favicon, social card, security.txt
-docusaurus.config.ts  Site config + JSON-LD (WebSite/Organization/SoftwareApplication)
-sidebars.ts           Sidebar layout
-```
-
-## Author
-
-Built and maintained by **Ahsan Mahmood** — [aoneahsan.com](https://aoneahsan.com) · [LinkedIn](https://linkedin.com/in/aoneahsan) · [GitHub](https://github.com/aoneahsan).
+Pages live in `docs/`; navigation is in `sidebars.ts`, site metadata in `docusaurus.config.ts`, and the local search plugin is configured there. Read [AGENTS.md](AGENTS.md) for public-repository and brand rules. [DEPLOY.md](DEPLOY.md) describes the release check.

@@ -1,50 +1,12 @@
-# Deploying GiftSpark Docs
+# GiftSpark docs deployment
 
-This site uses **dual hosting**: Firebase Hosting and GitHub Pages. Both serve the
-same content from the `build/` output and share the custom domain in
-`static/CNAME` (`giftspark-docs.aoneahsan.com`). Point your DNS at whichever host
-you make primary.
+GiftSpark Docs runs on GitHub Pages at [giftspark-docs.aoneahsan.com](https://giftspark-docs.aoneahsan.com/). `static/CNAME` pins the domain. [deploy-pages.yml](.github/workflows/deploy-pages.yml) builds and publishes every push to `main`.
 
-## Prerequisites
+## Release check
 
-```bash
-yarn install
-yarn build      # produces build/
-```
+1. Run `yarn install --immutable`, `yarn typecheck` and `yarn build`.
+2. Serve the exact `build/` output with `yarn serve`; inspect the homepage and a docs route in controlled desktop and mobile browsers, including console errors.
+3. Push the reviewed change to `main`, then verify the matching Pages workflow run succeeded.
+4. Open the live homepage and changed route. Correct a failed deployment with a follow-up commit; do not switch to the old Firebase target.
 
-## Option A — Firebase Hosting
-
-A Firebase Hosting site named `giftspark-docs` must exist in the Firebase project
-of the same name (`.firebaserc` → `default: giftspark-docs`).
-
-```bash
-yarn firebase:deploy
-# = yarn build && npx -y firebase-tools@latest deploy --only hosting --project giftspark-docs
-```
-
-The first deploy requires being logged in (`npx firebase-tools login`) and the
-hosting site to be created in the Firebase console. These are **user-only** steps.
-
-## Option B — GitHub Pages (automated)
-
-`.github/workflows/deploy-pages.yml` builds and publishes on every push to `main`.
-
-1. In the GitHub repo: **Settings → Pages → Source = GitHub Actions**.
-2. Add the custom domain `giftspark-docs.aoneahsan.com` (the `static/CNAME` file
-   is emitted into `build/` so Pages picks it up automatically).
-3. Add the DNS record pointing the subdomain at GitHub Pages (or Firebase, if you
-   make Firebase primary).
-
-## DNS
-
-Create a `CNAME` (or `A`/`AAAA`) record for `giftspark-docs.aoneahsan.com`
-pointing at your chosen primary host. This is a **user-only** step (registrar
-access required).
-
-## Verifying
-
-After deploy, confirm:
-
-- `https://giftspark-docs.aoneahsan.com/robots.txt` returns the crawl policy.
-- `https://giftspark-docs.aoneahsan.com/sitemap.xml` lists every page.
-- `https://giftspark-docs.aoneahsan.com/llms.txt` returns the AI index.
+Keep secrets out of this public repository. DNS and Pages were operational at this domain on 2026-10-14; recheck them when changing hosting or the custom domain.

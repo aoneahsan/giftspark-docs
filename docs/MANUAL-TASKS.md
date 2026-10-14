@@ -1,22 +1,10 @@
-# Manual / User-Only Tasks — Giftspark Docs
+# Manual tasks — GiftSpark Docs
 
-> The ONE place for everything only you (the human) can do. Fixed path: `docs/MANUAL-TASKS.md`.
-> Global spec: `~/.claude/rules/manual-tasks.md`. Excluded from the published site (see
-> `docusaurus.config.ts` → `docs.exclude`) because this repo is public.
-> Last updated: 2026-07-25
+**Last checked:** 2026-10-14. There is no confirmed pending owner-only setup for the current GitHub Pages release.
 
-## ⏳ Pending manual tasks
+| Setup | Evidence | Checked |
+|---|---|---|
+| Custom domain and HTTPS | `https://giftspark-docs.aoneahsan.com/` returned HTTP 200 | 2026-10-14 |
+| GitHub Pages workflow | `deploy-pages.yml` is enabled on `main`; verify the next run after a push | 2026-10-14 |
 
-| # | Task | Why only you | Status |
-|---|------|--------------|--------|
-| 1 | **Add DNS.** In Hostinger, add a `CNAME` record `giftspark-docs` → `aoneahsan.github.io` on `aoneahsan.com`. | Only you control the `aoneahsan.com` DNS zone. | ☐ Not started |
-| 2 | **Configure GitHub Pages.** Repo **Settings → Pages**: source = **GitHub Actions**, custom domain = `giftspark-docs.aoneahsan.com`, then **Enforce HTTPS** once the certificate provisions. | Repo settings are owner-only. | ☐ Not started |
-
-`static/CNAME` already ships `giftspark-docs.aoneahsan.com` inside `build/`, and `.github/workflows/deploy-pages.yml` builds and
-publishes on every push to `main` — these steps are all that remain.
-
-## ✅ Completed manual tasks
-
-| # | Task | Resolution | Date |
-|---|------|-----------|------|
-| — | — | — | — |
+Reopen this list if the domain, DNS or Pages settings change. The [deploy runbook](../DEPLOY.md) contains the release check.

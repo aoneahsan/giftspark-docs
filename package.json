@@ -2,7 +2,7 @@
   "name": "giftspark-docs",
   "version": "0.1.0",
   "private": true,
-  "description": "Public documentation site for GiftSpark — the employee engagement, recognition, and gifting platform (https://giftspark.aoneahsan.com). Built with Docusaurus, deployed to Firebase Hosting + GitHub Pages.",
+  "description": "Public Docusaurus documentation for GiftSpark, deployed to GitHub Pages.",
   "author": {
     "name": "Ahsan Mahmood",
     "email": "aoneahsan@gmail.com",

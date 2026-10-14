@@ -19,8 +19,7 @@ const config: Config = {
     'Recognition, rewards, and gifting for teams — set up and run GiftSpark.',
   favicon: 'img/favicon.svg',
 
-  // Production URL — served from Firebase Hosting site `giftspark-docs` and
-  // mirrored on GitHub Pages at the same custom domain.
+  // Production URL — GitHub Pages with the domain pinned in static/CNAME.
   url: SITE_URL,
   baseUrl: '/',
 
